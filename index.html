@@ -47,11 +47,19 @@
         <div class="form-container">
           <label for="name">Name </label>
           <input type="text" id="name" />
+          <label for="last=name">Last name </label>
+          <input type="text" id="last-name" />
           <label for="role">Role </label>
 
           <input type="text" id="role" />
           <label for="name">Image </label>
-          <input type="text" id="image" />
+          <!-- input immagine  -->
+          <p><input type="file"  accept="image/*" name="image" id="image-input"  onchange="loadFile(event)" style="display: none;"></p>
+
+    <p><label for="image-input" style="cursor: pointer;">Upload Image</label></p>
+    
+    <p><img id="output" width="200" /></p>
+
           <button type="button" id="addMemberButton">Add</button>
         </div>
       </div>
